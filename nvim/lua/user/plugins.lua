@@ -47,7 +47,6 @@ return packer.startup(function(use)
       use ("terrortylor/nvim-comment")
       use({ "joosepalviste/nvim-ts-context-commentstring"})
       use({ "kyazdani42/nvim-web-devicons"})
-      -- use "lukas-reineke/indent-blankline.nvim"
       use({ "lewis6991/impatient.nvim"})
         
         use {"akinsho/toggleterm.nvim", tag = '*', config = function()
@@ -56,10 +55,15 @@ return packer.startup(function(use)
     use 'junegunn/fzf'
     use 'junegunn/fzf.vim'
 	-- Colorschemes
+    use ('NvChad/base46')
+
+    use ({ 'projekt0n/github-nvim-theme' })
+    use "EdenEast/nightfox.nvim" -- Packer
+    use ('Tsuzat/NeoSolarized.nvim')
+    use { 'kartikp10/noctis.nvim', requires = { 'rktjmp/lush.nvim' } }
     use { "catppuccin/nvim", as = "catppuccin",}
     use { "ellisonleao/gruvbox.nvim" }
     use 'Shatur/neovim-ayu'
-    use 'morhetz/gruvbox'
     use 'B4mbus/oxocarbon-lua.nvim'
     use "rebelot/kanagawa.nvim"
     use 'folke/tokyonight.nvim'
@@ -99,6 +103,7 @@ return packer.startup(function(use)
 	use({
 		"nvim-treesitter/nvim-treesitter",
 	})
+
 
  -- Lua
 use {
