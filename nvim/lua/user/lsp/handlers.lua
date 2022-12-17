@@ -3,10 +3,10 @@ local M = {}
 -- TODO: backfill this to template
 M.setup = function()
 	local signs = {
-		{ name = "DiagnosticSignError", text = "" },
-		{ name = "DiagnosticSignWarn", text = "" },
-		{ name = "DiagnosticSignHint", text = "" },
-		{ name = "DiagnosticSignInfo", text = "" },
+		{ name = "DiagnosticSignError", text = "E" },
+		{ name = "DiagnosticSignWarn", text = "W" },
+		{ name = "DiagnosticSignHint", text = "H" },
+		{ name = "DiagnosticSignInfo", text = "I" },
 	}
 
 	for _, sign in ipairs(signs) do
@@ -21,12 +21,11 @@ M.setup = function()
 			active = signs,
 		},
 		update_in_insert = true,
-		underline = false,
+		underline = true,
 		severity_sort = true,
 		float = {
 			focusable = false,
 			style = "minimal",
-			border = "rounded",
 			source = "always",
 			header = "",
 			prefix = "",
@@ -84,7 +83,7 @@ end
 M.on_attach = function(client, bufnr)
 	-- vim.notify(client.name .. " starting...")
 	-- TODO: refactor this into a method that checks if string in list
-	if client.name == "tsserver" then
+	if client.name == "sumneko_lua" then
 		client.server_capabilities.document_formatting = false
 	end
   if client.name == "clangd" then

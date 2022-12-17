@@ -20,7 +20,7 @@ vim.g.maplocalleader = " "
 
 -- telescope --
 keymap("n", "ti", ":ToggleTerm<CR>", opts)
-keymap("n", "<C-p>",":Files<CR>", opts)
+-- keymap("n", "<C-p>",":Files<CR>", opts)
 keymap("n", "<C-f>", ":Telescope find_files<CR>", opts)
 keymap("n", "no", ":nohls<CR>", opts)
 --keymap("n", "<C-b>", ":Telescope buffers<CR>", opts)
