@@ -1,4 +1,6 @@
 local M = {}
+local configs = require('lspconfig/configs')
+local lspconfig = require('lspconfig')
 
 -- TODO: backfill this to template
 M.setup = function()
@@ -89,14 +91,42 @@ M.on_attach = function(client, bufnr)
   if client.name == "clangd" then
     client.server_capabilities.document_formatting = false
   end
-  if client.name == "pylsp" then
+  if client.name == "pyright" then
     client.server_capabilities.document_formatting = false
   end
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
 end
 
+lspconfig.emmet_ls.setup({
+    -- on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' },
+    init_options = {
+      html = {
+        options = {
+          -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+          ["bem.enabled"] = true,
+        },
+      },
+    }
+})
 local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+lspconfig.emmet_ls.setup({
+    -- on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' },
+    init_options = {
+      html = {
+        options = {
+          -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+          ["bem.enabled"] = true,
+        },
+      },
+    }
+})
 
 local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status_ok then
@@ -104,5 +134,7 @@ if not status_ok then
 end
 
 M.capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
+
+
 
 return M
