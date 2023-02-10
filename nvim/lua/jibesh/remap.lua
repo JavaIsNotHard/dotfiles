@@ -19,6 +19,6 @@ vim.keymap.set("v", ">", ">gv")
 
 vim.keymap.set("n", "ti", "<cmd>ToggleTerm<CR>")
 vim.keymap.set("n", "no", ":nohls<CR>")
-vim.keymap.set("n", "ii", ":CommentToggle<CR>")
+vim.keymap.set("n", "gcc", ":CommentToggle<CR>")
 
 

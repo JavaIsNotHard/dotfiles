@@ -42,7 +42,12 @@ return require('packer').startup(function(use)
 	use({ "hrsh7th/cmp-nvim-lsp"})
 	use({ "hrsh7th/cmp-nvim-lua"})
 
+    use 'JoosepAlviste/palenightfall.nvim'
     use 'folke/tokyonight.nvim'
+    use({
+      'glepnir/zephyr-nvim',
+      requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
+    })
     use 'jremmen/vim-ripgrep'
     use ("terrortylor/nvim-comment")
     use({ "lewis6991/impatient.nvim"})
