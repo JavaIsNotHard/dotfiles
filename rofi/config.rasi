@@ -179,5 +179,3 @@ configuration {
 	me-accept-custom: "Control+MouseDPrimary";
 */
 }
-//@theme "/home/jibesh/.local/share/rofi/themes/spotlight.rasi"
-@theme "/home/jibesh/.local/share/rofi/themes/spotlight-dark.rasi"

@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
 	use({ "hrsh7th/cmp-nvim-lsp"})
 	use({ "hrsh7th/cmp-nvim-lua"})
 
+    use "olimorris/onedarkpro.nvim"
     use 'JoosepAlviste/palenightfall.nvim'
     use 'folke/tokyonight.nvim'
     use({
@@ -57,7 +58,42 @@ return require('packer').startup(function(use)
 	})
 
     use({'rose-pine/neovim',})
+    use { 'dasupradyumna/midnight.nvim' }
     use({"folke/zen-mode.nvim"})
+	use("nvim-tree/nvim-web-devicons")
+    use { "catppuccin/nvim", as = "catppuccin" }
+    -- use "lukas-reineke/indent-blankline.nvim"
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use { "akinsho/bufferline.nvim"}
+	use("famiu/bufdelete.nvim")
+    use("lewis6991/gitsigns.nvim")
+
+    use({
+        "rebelot/heirline.nvim",
+        -- You can optionally lazy-load heirline on UiEnter
+        -- to make sure all required plugins and colorschemes are loaded before setup
+        -- event = "UiEnter",
+    })
+	-- colorscheme
+    use { "ntk148v/habamax.nvim", requires={ "rktjmp/lush.nvim" } }
+	use("rebelot/kanagawa.nvim")
+    use("ellisonleao/gruvbox.nvim")
+    use "lunarvim/darkplus.nvim"
+    use {'lewis6991/github_dark.nvim'}
+    use {
+        "mcchrish/zenbones.nvim",
+        -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+        -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+        -- In Vim, compat mode is turned on as Lush only works in Neovim.
+        requires = "rktjmp/lush.nvim"
+    }
+    use {
+      "rockyzhang24/arctic.nvim",
+      requires = { "rktjmp/lush.nvim" }
+    }
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

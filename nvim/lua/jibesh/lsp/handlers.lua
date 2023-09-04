@@ -17,7 +17,7 @@ M.setup = function()
 
 	local config = {
 		-- disable virtual text
-		virtual_text = true;
+		virtual_text = false;
 		-- show signs
 		signs = {
 			active = signs,
@@ -94,6 +94,9 @@ M.on_attach = function(client, bufnr)
   if client.name == "pyright" then
     client.server_capabilities.document_formatting = false
   end
+  if client.name == "rust_analyzer" then 
+    client.server_capabilities.document_formatting = false
+  end 
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
 end

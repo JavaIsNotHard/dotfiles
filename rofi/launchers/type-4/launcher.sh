@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 ## Author : Aditya Shakya (adi1090x)
 ## Github : @adi1090x
 #
@@ -11,7 +10,7 @@
 ## style-6     style-7     style-8     style-9     style-10
 
 dir="$HOME/.config/rofi/launchers/type-4"
-theme='style-7'
+theme='style-5'
 
 ## Run
 rofi \
