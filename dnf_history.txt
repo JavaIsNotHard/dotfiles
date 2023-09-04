@@ -1,0 +1,167 @@
+ID     | Command line                                                                                              | Date and time    | Action(s)      | Altered
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+   165 | install lutris                                                                                            | 2023-09-03 14:33 | Install        |   90   
+   164 | install nginx                                                                                             | 2023-08-30 09:34 | Install        |    1   
+   163 | update                                                                                                    | 2023-08-30 09:31 | C, E, I, O, U  |   67 EE
+   162 | install yum-utils                                                                                         | 2023-08-30 09:29 | Install        |    1   
+   161 |                                                                                                           | 2023-08-30 09:25 | Install        |    3   
+   160 | install simplescreenrecorder-0.4.4-2.fc37.x86_64                                                          | 2023-08-27 06:27 | Install        |    1   
+   159 |                                                                                                           | 2023-08-26 15:26 | Install        |    1   
+   158 |                                                                                                           | 2023-08-21 21:35 | I, U           |  113   
+   157 |                                                                                                           | 2023-08-15 19:28 | Install        |   12   
+   156 | install code-insiders                                                                                     | 2023-08-14 16:05 | Install        |    1  <
+   155 | install screenkey                                                                                         | 2023-08-14 10:15 | Install        |    3 > 
+   154 | remove codium-insiders-1.78.0.23095-el7.x86_64                                                            | 2023-08-13 14:46 | Removed        |    1   
+   153 | update codium-1.81.1.23222-el7.x86_64                                                                     | 2023-08-13 14:42 | Upgrade        |    1   
+   152 |                                                                                                           | 2023-08-05 22:53 | Upgrade        |    1   
+   151 |                                                                                                           | 2023-08-04 22:16 | Upgrade        |    6   
+   150 | update                                                                                                    | 2023-08-03 15:51 | C, E, I, O, U  |  463 EE
+   149 | install libappindicator-gtk3 python3-psutil cairo-devel python3-devel gobject-introspection-devel cairo-g | 2023-08-03 11:46 | Install        |    9   
+   148 | install python-devel                                                                                      | 2023-07-20 14:47 | I, U           |    5   
+   147 | install libpq5-devel                                                                                      | 2023-07-20 14:42 | I, U           |    2   
+   146 | remove libpgf                                                                                             | 2023-07-20 14:37 | Removed        |    2   
+   145 | install libpgf-devel-6.14.12-20.fc37.x86_64                                                               | 2023-07-20 14:32 | Install        |    2   
+   144 | install lazygit                                                                                           | 2023-07-20 09:49 | Install        |    1  <
+   143 | install dosbox                                                                                            | 2023-07-19 06:09 | Install        |    7 > 
+   142 | install ncurses-devel readline-devel sqlite-devel-3.40.0-1.fc37.x86_64                                    | 2023-07-17 13:49 | I, U           |    8   
+   141 | install openssl openssl-devel                                                                             | 2023-07-17 13:46 | I, U           |    4   
+   140 | remove hyprland-v0.21.0beta-12.fc37.x86_64                                                                | 2023-07-17 13:41 | Removed        |    8   
+   139 |                                                                                                           | 2023-07-17 08:10 | Install        |    3   
+   138 |                                                                                                           | 2023-07-12 14:30 | Install        |    1   
+   137 |                                                                                                           | 2023-07-10 18:20 | Install        |    2   
+   136 | install alacritty                                                                                         | 2023-07-08 14:18 | Install        |    1   
+   135 |                                                                                                           | 2023-07-05 13:58 | Install        |    1   
+   134 | upgrade pgadmin4                                                                                          | 2023-06-14 13:15 | Upgrade        |    4 EE
+   133 | install java-11-openjdk                                                                                   | 2023-06-02 19:51 | Install        |    2   
+   132 |                                                                                                           | 2023-06-01 21:17 | E, I, U        |  272   
+   131 |                                                                                                           | 2023-06-01 21:14 | Install        |    4   
+   130 | install torbrowser-launcher                                                                               | 2023-05-30 14:40 | Install        |   10   
+   129 | install tor                                                                                               | 2023-05-30 14:39 | Install        |    2  <
+   128 | install curl cabextract xorg-x11-font-utils fontconfig                                                    | 2023-05-28 16:35 | Install        |    2 > 
+   127 | install mypaint                                                                                           | 2023-05-26 13:45 | Install        |    5   
+   126 | remove mypaint                                                                                            | 2023-05-26 13:45 | Removed        |    5  <
+   125 | install pgadmin4                                                                                          | 2023-05-24 13:55 | I, O           |    7 ><
+   124 | install postgresql-server postgresql-contrib                                                              | 2023-05-24 12:56 | Install        |    2 > 
+   123 | install libXxf86vm-devel-1.1.4-19.fc37.x86_64                                                             | 2023-05-23 20:27 | Install        |    1   
+   122 | install assimp-devel                                                                                      | 2023-05-23 20:24 | Install        |    4   
+   121 | update rstudio-desktop                                                                                    | 2023-05-22 12:58 | Upgrade        |    2   
+   120 | install udiskie                                                                                           | 2023-05-16 12:59 | Install        |    1   
+   119 | remove udiskie                                                                                            | 2023-05-16 12:58 | Removed        |    1   
+   118 |                                                                                                           | 2023-05-16 12:57 | Install        |    3   
+   117 | install postgresql postgresql-server                                                                      | 2023-05-07 15:01 | Install        |    3   
+   116 |                                                                                                           | 2023-05-03 13:18 | Install        |    1   
+   115 | install steam                                                                                             | 2023-04-29 12:08 | Install        |  178  <
+   114 | install sbcl                                                                                              | 2023-04-29 10:20 | Install        |    3 > 
+   113 | update                                                                                                    | 2023-04-28 08:53 | C, E, I, U     |  103   
+   112 |                                                                                                           | 2023-04-25 09:22 | Install        |    1   
+   111 | install polybar                                                                                           | 2023-04-25 09:08 | Install        |    1   
+   110 | remove eww-0.4.0-5.git.52e9603dd8.fc37.x86_64                                                             | 2023-04-24 08:50 | Removed        |    1   
+   109 | install gtk3-devel                                                                                        | 2023-04-24 08:49 | Install        |   10   
+   108 | install eww                                                                                               | 2023-04-24 08:46 | Install        |    1  <
+   107 | install cairo-gobject cairo-gobject-devel                                                                 | 2023-04-24 08:44 | Install        |    1 > 
+   106 | install gdk-pixbuf2-devel                                                                                 | 2023-04-24 08:43 | Install        |    3   
+   105 | install waybar                                                                                            | 2023-04-20 14:53 | Install        |    9   
+   104 | install wl-clipboard                                                                                      | 2023-04-20 14:51 | Install        |    1   
+   103 | install wofi                                                                                              | 2023-04-20 14:46 | Install        |    1   
+   102 | install hyprland                                                                                          | 2023-04-20 14:36 | Install        |    9   
+   101 | remove wlroots-devel-0.15.1-4.fc37.x86_64                                                                 | 2023-04-20 14:36 | Removed        |   10  <
+   100 | install sway                                                                                              | 2023-04-20 14:25 | D, I           |   15 > 
+    99 | install xev                                                                                               | 2023-04-20 13:32 | Install        |    1  <
+    98 |                                                                                                           | 2023-04-20 13:29 | Install        |    1 ><
+    97 | update                                                                                                    | 2023-04-20 13:29 | C, E, I, O, U  |  160 > 
+    96 | install SDL2 SDL2-devel                                                                                   | 2023-04-16 19:48 | Install        |    2   
+    95 | install glfw glfw-devel                                                                                   | 2023-04-16 19:45 | Install        |    2   
+    94 | install freeglut-devel                                                                                    | 2023-04-15 19:47 | Install        |    2   
+    93 | install alsa-lib-devel mesa-libGL-devel libX11-devel libXrandr-devel libXi-devel libXcursor-devel libXine | 2023-04-14 20:20 | Install        |    8   
+    92 | remove rust                                                                                               | 2023-04-13 21:05 | Removed        |    3   
+    91 | install boost-devel                                                                                       | 2023-04-12 20:06 | Install        |   21   
+    90 | install pango-devel                                                                                       | 2023-04-08 10:10 | Install        |    4   
+    89 | install cairo-devel                                                                                       | 2023-04-08 10:09 | Install        |    2   
+    88 | install wlroots-devel                                                                                     | 2023-04-08 10:09 | Install        |   16  <
+    87 | remove pixman-devel-0.40.0-6.fc37.x86_64                                                                  | 2023-04-08 10:07 | Removed        |   23 > 
+    86 | install wlroots-devel                                                                                     | 2023-04-08 09:59 | Install        |   16   
+    85 | install wlroots                                                                                           | 2023-04-08 09:57 | Install        |    2   
+    84 | install pkgconfig(wayland-server)                                                                         | 2023-04-08 09:55 | Install        |    1   
+    83 | install ninja-build cmake meson gcc-c++ libxcb-devel libX11-devel pixman-devel wayland-protocols-devel ca | 2023-04-08 09:52 | Install        |   15   
+    82 | update                                                                                                    | 2023-04-07 21:35 | C, E, I, U     |  250   
+    81 | install octave                                                                                            | 2023-04-02 13:14 | Install        |   23   
+    80 | install rstudio-desktop-2022.07.2+576-1.fc37.x86_64                                                       | 2023-04-02 13:12 | Install        |   37   
+    79 | remove rstudio-2023.03.0+386-1.fc37.x86_64                                                                | 2023-04-02 13:12 | Removed        |   28   
+    78 | install rstudio                                                                                           | 2023-04-02 09:32 | Install        |   28   
+    77 | install R                                                                                                 | 2023-04-02 09:30 | Install        |  529   
+    76 |                                                                                                           | 2023-04-01 09:20 | Install        |    1   
+    75 |                                                                                                           | 2023-04-01 09:17 | Install        |    1   
+    74 | install maim                                                                                              | 2023-04-01 09:17 | Install        |    3   
+    73 | install rofi                                                                                              | 2023-03-28 10:15 | Install        |    2   
+    72 |                                                                                                           | 2023-03-26 20:09 | Install        |    1   
+    71 |                                                                                                           | 2023-03-26 20:02 | Install        |    1   
+    70 | install lxappearance                                                                                      | 2023-03-26 20:00 | Install        |    4   
+    69 |                                                                                                           | 2023-03-26 19:54 | Install        |    1   
+    68 | install feh                                                                                               | 2023-03-26 19:43 | Install        |    2   
+    67 | install picom nitrogen slock                                                                              | 2023-03-26 19:01 | Install        |    9   
+    66 | install i3                                                                                                | 2023-03-25 07:55 | Install        |   32   
+    65 |                                                                                                           | 2023-03-24 21:03 | E, I, U        |  134   
+    64 |                                                                                                           | 2023-03-24 09:56 | Install        |    4   
+    63 | install sublime-text                                                                                      | 2023-03-19 20:08 | Install        |    1  <
+    62 | install bat                                                                                               | 2023-03-19 16:02 | Install        |    1 > 
+    61 |                                                                                                           | 2023-03-19 16:02 | Install        |    1   
+    60 | install python3-tkinter                                                                                   | 2023-03-14 10:05 | Install        |    2   
+    59 | install zathura-pdf-poppler-0.3.1-1.fc37.x86_64                                                           | 2023-03-14 08:24 | Install        |    1   
+    58 |                                                                                                           | 2023-03-14 08:21 | Install        |    2   
+    57 | update                                                                                                    | 2023-03-13 08:33 | C, E, I, U     |   71   
+    56 |                                                                                                           | 2023-03-08 21:47 | E, I, U        |  137   
+    55 | install mypaint                                                                                           | 2023-03-02 18:00 | Install        |    6   
+    54 | upgrade                                                                                                   | 2023-02-28 21:49 | C, E, I, U     |   85   
+    53 | install codium codium-insiders                                                                            | 2023-02-26 17:58 | Install        |    2  <
+    52 | install cargo                                                                                             | 2023-02-26 15:30 | Install        |    1 > 
+    51 | install rust                                                                                              | 2023-02-26 15:30 | Install        |    2   
+    50 |                                                                                                           | 2023-02-25 21:21 | Install        |    1   
+    49 | install thefuck                                                                                           | 2023-02-25 19:45 | Install        |    6   
+    48 | install scrcpy                                                                                            | 2023-02-25 19:39 | Install        |    2  <
+    47 | install sqlitebrowser                                                                                     | 2023-02-25 18:45 | Install        |    5 > 
+    46 |                                                                                                           | 2023-02-25 15:18 | Install        |    5   
+    45 | remove okular                                                                                             | 2023-02-25 14:22 | Removed        |   94 EE
+    44 | install qpdfview-qt6-0.5.0-1.fc37.x86_64                                                                  | 2023-02-25 14:20 | Install        |    4   
+    43 | install okular                                                                                            | 2023-02-25 14:17 | Install        |   94   
+    42 | install vlc                                                                                               | 2023-02-23 19:28 | Install        |   27   
+    41 | install gstreamer1-vaapi                                                                                  | 2023-02-23 19:26 | Install        |    1   
+    40 |                                                                                                           | 2023-02-23 19:17 | Install        |    1   
+    39 | install libva-utils                                                                                       | 2023-02-23 19:16 | Install        |    1   
+    38 | install mesa-vdpau-drivers                                                                                | 2023-02-23 19:16 | Install        |    1   
+    37 | remove mesa-vdpau-drivers-freeworld-22.3.5-1.fc37.x86_64                                                  | 2023-02-23 19:16 | Removed        |    1   
+    36 | install ffmpeg-devel                                                                                      | 2023-02-21 20:55 | Install        |    1   
+    35 | install ffmpeg --allowerasing                                                                             | 2023-02-21 20:55 | E, I           |   22   
+    34 |                                                                                                           | 2023-02-21 20:52 | Install        |    1   
+    33 | install qbittorrent                                                                                       | 2023-02-21 19:14 | Install        |    2   
+    32 | install gnome-pomodoro                                                                                    | 2023-02-20 14:05 | Install        |    1   
+    31 |                                                                                                           | 2023-02-20 13:25 | Install        |    4   
+    30 |                                                                                                           | 2023-02-20 09:24 | Install        |    1   
+    29 |                                                                                                           | 2023-02-20 09:03 | Install        |    1   
+    28 |                                                                                                           | 2023-02-19 18:39 | I, U           |  118   
+    27 | swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld                                                      | 2023-02-19 18:37 | Install        |    1   
+    26 | swap mesa-va-drivers mesa-va-drivers-freeworld                                                            | 2023-02-19 18:37 | E, I, U        |    4   
+    25 | groupupdate sound-and-video                                                                               | 2023-02-19 18:37 | Install        |    1   
+    24 | install -y ./pulsar-1.102.2023021605.x86_64.rpm                                                           | 2023-02-18 10:34 | Install        |    1   
+    23 |                                                                                                           | 2023-02-16 11:53 | Install        |    1   
+    22 | install clang                                                                                             | 2023-02-16 09:58 | Install        |    1   
+    21 |                                                                                                           | 2023-02-16 09:57 | Install        |    6   
+    20 | install mpv                                                                                               | 2023-02-15 19:26 | Install        |   15   
+    19 |                                                                                                           | 2023-02-14 13:22 | Install        |    2   
+    18 | install telegram -y                                                                                       | 2023-02-14 11:05 | Install        |   16  <
+    17 | install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-37.noarch.rpm -y         | 2023-02-14 11:03 | Install        |    1 > 
+    16 | install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-37.noarch.rpm -y               | 2023-02-14 11:03 | Install        |    1   
+    15 | install keepassxc-2.7.4-4.fc37.x86_64                                                                     | 2023-02-14 10:03 | Install        |    5   
+    14 | install ffmpeg-free ffmpeg-free-devel                                                                     | 2023-02-14 09:58 | Install        |   55   
+    13 | install -y glib2-devel                                                                                    | 2023-02-14 09:55 | Install        |    9   
+    12 | install -y sassc                                                                                          | 2023-02-14 09:48 | Install        |    2   
+    11 | install gnome-extensions-app-43~beta-1.fc37.x86_64                                                        | 2023-02-14 09:32 | Install        |    1   
+    10 | install nodejs npm                                                                                        | 2023-02-14 09:26 | Install        |    5   
+     9 | install sqlite                                                                                            | 2023-02-14 09:25 | Install        |    1   
+     8 |                                                                                                           | 2023-02-14 09:12 | Install        |    1   
+     7 | install kitty                                                                                             | 2023-02-14 09:10 | Install        |    4   
+     6 |                                                                                                           | 2023-02-13 21:46 | I, U           |  671   
+     5 | install neovim                                                                                            | 2023-02-13 21:29 | Install        |   11   
+     4 | install zsh                                                                                               | 2023-02-13 21:15 | Install        |    1   
+     3 |                                                                                                           | 2023-02-13 20:52 | Install        |    1   
+     2 |                                                                                                           | 2023-02-13 20:51 | I, U           |    7  <
+     1 |                                                                                                           | 2022-11-05 14:10 | Install        | 1796 >E
