@@ -1,5 +1,4 @@
-require("jibesh.packer")
+require("jibesh.lazy")
 require("jibesh.set")
-require("jibesh.remap")
-require("jibesh.lsp")
- -- require("jibesh.lualine")
+require('jibesh.remap')
+require('jibesh.autocommands')

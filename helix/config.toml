@@ -1,0 +1,10 @@
+theme = "github_dark"
+
+[editor]
+line-number = "relative"
+undercurl = true
+
+[editor.statusline] 
+left = ['mode', 'spinner', 'file-name']
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+
