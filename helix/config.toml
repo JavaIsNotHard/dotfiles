@@ -1,10 +1,37 @@
-theme = "github_dark"
+theme = "adwaita-dark"
 
 [editor]
 line-number = "relative"
 undercurl = true
+# bufferline = "multiple"
+rulers = [80]
 
-[editor.statusline] 
-left = ['mode', 'spinner', 'file-name']
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+[editor.lsp]
+display-messages = true
 
+[editor.indent-guides]
+render = false
+
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+#tab = ""
+
+[keys.normal] 
+C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
+C-f = "file_picker_in_current_directory"
+G = "goto_file_end"
+P = "paste_clipboard_after"
+C-x = ":buffer-close"
+
+[editor.soft-wrap]
+enable = true

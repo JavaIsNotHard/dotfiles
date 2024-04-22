@@ -22,3 +22,8 @@ vim.keymap.set("n", "no", ":nohls<CR>")
 vim.keymap.set("n", "gcc", ":CommentToggle<CR>")
 
 
+vim.keymap.set("n", "<leader>tt", ":ToggleTerm direction=float<CR>")
+vim.keymap.set("n", "<leader>tv", ":ToggleTerm direction=vertical<CR>")
+vim.keymap.set("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>")
+vim.keymap.set("n", "<leader>tp", ":ToggleTerm direction=tab<CR>")
+

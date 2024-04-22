@@ -1,0 +1,92 @@
+use-grammars = { only = [ "c", "cpp", "python", "javascript", "typescript", "tsx"] }
+
+[[language]]
+name = "toml"
+scope = "source.toml"
+injection-regex = "toml"
+file-types = ["toml"]
+roots = []
+comment-token = "#"
+language-server = { command = "taplo", args = ["lsp", "stdio"] }
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "toml"
+source = { git = "https://github.com/ikatyang/tree-sitter-toml", rev = "7cff70bbcbbc62001b465603ca1ea88edd668704" }
+
+
+[[language]]
+name = "c"
+injection-regex = "c"
+file-types = ["c", "h"] # TODO: ["h"]
+roots = []
+language-server = { command = "clangd" }
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "cmake"
+source = { git = "https://github.com/uyha/tree-sitter-cmake", rev = "f6616f1e417ee8b62daf251aa1daa5d73781c596" }
+
+
+[[language]]
+name = "python"
+scope = "source.python"
+injection-regex = "python"
+file-types = ["py"]
+shebangs = ["python"]
+roots = []
+comment-token = "#"
+language-server = { command = "pylsp" }
+# TODO: pyls needs utf-8 offsets
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "python"
+source = { git = "https://github.com/tree-sitter/tree-sitter-python", rev = "de221eccf9a221f5b85474a553474a69b4b5784d" }
+
+
+[[language]]
+name = "go"
+scope = "source.go"
+injection-regex = "go"
+file-types = ["go"]
+roots = ["go.work", "go.mod"]
+auto-format = true
+comment-token = "//"
+language-server = { command = "gopls" }
+# TODO: gopls needs utf-8 offsets?
+indent = { tab-width = 4, unit = "\t" }
+
+[[grammar]]
+name = "go"
+source = { git = "https://github.com/tree-sitter/tree-sitter-go", rev = "64457ea6b73ef5422ed1687178d4545c3e91334a" }
+
+[[language]]
+name = "javascript"
+scope = "source.js"
+injection-regex = "(js|javascript)"
+# language-id = "javascript"
+file-types = ["js", "mjs", "cjs", "jsx", "ts", "tsx"]
+shebangs = ["node"]
+roots = []
+comment-token = "//"
+# TODO: highlights-params
+language-server = {command = "typescript-language-server" }
+indent = { tab-width = 2, unit = " " }
+
+[[grammar]]
+name = "javascript"
+source = { git = "https://github.com/tree-sitter/tree-sitter-javascript", rev = "4a95461c4761c624f2263725aca79eeaefd36cad" }
+
+[[language]]
+name="cpp"
+auto-format = false
+file-types = ["cpp", "hpp"] # TODO: ["h"]
+roots = []
+language-server = { command = "clangd" }
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "cpp"
+source = { git = "https://github.com/tree-sitter/tree-sitter-typescript" }
+

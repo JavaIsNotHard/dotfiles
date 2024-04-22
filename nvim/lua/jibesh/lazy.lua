@@ -11,22 +11,66 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " " 
+vim.g.mapleader = " "
 
 local plugins = {
+    {
+        "NvChad/base46",
+        lazy = true,
+        build = function()
+          require("base46").load_all_highlights()
+        end,
+    },
+    -- {
+    --     "NvChad/ui",
+    --     config = function()
+    --       require "nvchad"
+    --     end,
+    -- },
+    --
+-- if u want nvchad's ui plugin :)
+    -- {
+    --   'stevearc/oil.nvim',
+    --   opts = {},
+    --   -- Optional dependencies
+    --   dependencies = { "nvim-tree/nvim-web-devicons" },
+    -- },
+    {"rebelot/kanagawa.nvim"},
+    { "EdenEast/nightfox.nvim" }, -- lazy
+    {
+	'windwp/nvim-ts-autotag',
+	 config = function()
+	     require('nvim-ts-autotag').setup()
+	 end
+    },
     "nvim-lua/plenary.nvim", -- useful lua functions used by lots of plugins
+    {
+    "b0o/incline.nvim",
+	dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    'nvim-lualine/lualine.nvim',
+    -- { "lukas-reineke/indent-blankline.nvim", main="ibl", opts = {}},
+    -- {"lukas-reineke/indent-blankline.nvim", tag = "v2.20.8"},
+    -- {'kevinhwang91/nvim-ufo', dependencies= 'kevinhwang91/promise-async'},
+    {
+    "HoNamDuong/hybrid.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    },
     "windwp/nvim-autopairs",
-     {
+    -- "nvim-tree/nvim-tree.lua",
+        {
       'nvim-telescope/telescope.nvim',
-      tag = '0.1.0',
       dependencies = { {'nvim-lua/plenary.nvim'} }
     },
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
 	"jose-elias-alvarez/null-ls.nvim",
-    "L3MON4D3/LuaSnip", 
+    "L3MON4D3/LuaSnip",
 	"rafamadriz/friendly-snippets",
+    "ntk148v/habamax.nvim", dependencies={ "rktjmp/lush.nvim" },
      "hrsh7th/nvim-cmp",
 	 "hrsh7th/cmp-buffer",
 	 "hrsh7th/cmp-path",
@@ -37,21 +81,24 @@ local plugins = {
      'jremmen/vim-ripgrep',
      "terrortylor/nvim-comment",
     "lewis6991/impatient.nvim",
-     "akinsho/toggleterm.nvim",
     "nvim-treesitter/nvim-treesitter",
+    {'akinsho/toggleterm.nvim', version = "*", config = true},
+    'sainnhe/gruvbox-material',
+    "lunarvim/darkplus.nvim",
     'rose-pine/neovim',
+    'rktjmp/lush.nvim',
+    "mcchrish/zenbones.nvim",
+    { "ellisonleao/gruvbox.nvim" },
    "folke/zen-mode.nvim",
 	"nvim-tree/nvim-web-devicons",
 	"famiu/bufdelete.nvim",
-    "lewis6991/gitsigns.nvim",
-     {
-        "mcchrish/zenbones.nvim",
-        -- Optionally install Lush. Allows for more configuration or extending the colorscheme
-        -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
-        -- In Vim, compat mode is turned on as Lush only works in Neovim.
-        dependencies = "rktjmp/lush.nvim"
+    -- "lewis6991/gitsigns.nvim",
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
     },
-
+    'navarasu/onedark.nvim',
     {
       {
         'VonHeikemen/lsp-zero.nvim',
@@ -93,8 +140,21 @@ local plugins = {
         end
       },
 
-      { 'projekt0n/github-nvim-theme' },
-              -- LSP
+
+      {
+            "zbirenbaum/copilot.lua",
+            cmd = "Copilot",
+              event = "InsertEnter",
+              config = function()
+                require("copilot").setup({})
+              end,
+        } ,
+        {
+          "zbirenbaum/copilot-cmp",
+          config = function ()
+            require("copilot_cmp").setup()
+          end
+        },
       {
         'neovim/nvim-lspconfig',
         cmd = 'LspInfo',

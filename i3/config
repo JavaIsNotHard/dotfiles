@@ -204,10 +204,9 @@ bar {
         tray_output primary
 }
 
-for_window [class="^.*"] border pixel 1
-# new_window pixel 1
+for_window [class="^.*"] border pixel 2
+new_window pixel 2
 focus_follows_mouse no
-smart_borders on
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id ~/bin/volume.py

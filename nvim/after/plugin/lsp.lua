@@ -8,10 +8,21 @@ end)
 
 lsp.ensure_installed({
   'tsserver',
+  'html-lsp',
   'pyright',
   'clangd',
   'eslint',
+  'gopls',
+  'emmet-language-server',
   'rust_analyzer',
+})
+
+require('lspconfig').gopls.setup({
+    single_file_support = false,
+    on_attach = function(client, bufnr)
+      print("Hello go")
+    end,
+    root_dir = util.root_pattern("go.mod", "go.work", ".git")
 })
 
 require('lspconfig').tsserver.setup({
@@ -26,16 +37,31 @@ require('lspconfig').tsserver.setup({
   end,
 })
 
-require('lspconfig').rust_analyzer.setup({
-    single_file_support = false,
-    on_attach = function(client, bufnr)
-        print('hello rust user')
-    end,
-    on_init = function(client)
-        client.server_capabilities.documentFormattingProvider = false
-        client.server_capabilities.documentFormattingRangeProvider = false
-    end,
+require('lspconfig').html.setup({
+  single_file_support = false,
+  root_dir = util.root_pattern('.tsx', '.jsx', '.html'),
+  on_attach = function(client, bufnr)
+    print('hello eslint')
+  end,
+  on_init = function(client)
+    client.server_capabilities.documentFormattingProvider = false
+    client.server_capabilities.documentFormattingRangeProvider = false
+  end,
 })
+
+
+
+
+-- require('lspconfig').rust_analyzer.setup({
+--     single_file_support = false,
+--     on_attach = function(client, bufnr)
+--         print('hello rust user')
+--     end,
+--     on_init = function(client)
+--         client.server_capabilities.documentFormattingProvider = false
+--         client.server_capabilities.documentFormattingRangeProvider = false
+--     end,
+-- })
 
 lsp.setup()
 

@@ -4,15 +4,18 @@ if not status_ok then
 end
 
 configs.setup({
-	ignore_install = { "" }, -- List of parsers to ignore installing
-	highlight = {
-		enable = true, -- false will disable the whole extension
-		disable = { "css" }, -- list of language that will be disabled
-	},
-	autopairs = {
-		enable = true,
-	},
-	indent = { enable = false, disable = { "python", "css", "cpp", "c" } },
+    ignore_install = { "" }, -- List of parsers to ignore installing
+    highlight = {
+	    enable = true, -- false will disable the whole extension
+	    disable = { "css" }, -- list of language that will be disabled
+    },
+    autopairs = {
+	    enable = true,
+    },
+    autotag = {
+	enable = true,
+    },
+    indent = { enable = true, disable = { "python", "css", "cpp", "c" } },
     rainbow = {
     enable = true,
     extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean

@@ -1,14 +1,37 @@
--- require("tokyonight").setup({
---   style = "night", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
---   transparent = true, -- Enable this to disable setting the background color
---   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
--- })
-
-require('rose-pine').setup({
-    disable_background = false
+require("tokyonight").setup({
+  style = "night", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
+  transparent = false, -- Enable this to disable setting the background color
+  terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
 })
 
-vim.cmd[[colorscheme neobones]]
+require('rose-pine').setup({
+    disable_background = true
+})
+
+-- function ColorMyPencils(color)
+-- 	color = color or "rose-pine"
+-- 	vim.cmd.colorscheme(color)
+--	
+
+vim.api.nvim_set_hl(0, 'FloatBorder', { bg = "none" })
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+
+vim.cmd[[colorscheme rose-pine]]
+-- end
+--
+-- ColorMyPencils()
+--
+-- require('onedark').setup({
+--     style="darker",
+-- })
+--
+
+--
+
+-- vim.cmd[[let g:gruvbox_material_background = "hard"]]
+-- vim.cmd[[colorscheme gruvbox-material]]
 
 -- local status, kanagawa = pcall(require, "kanagawa")
 -- if not status then
@@ -37,7 +60,7 @@ vim.cmd[[colorscheme neobones]]
 -- 		theme = {
 -- 			all = {
 -- 				ui = {
--- 					bg_gutter = "none",
+-- 					bg_gutter = "n",
 -- 				},
 -- 			},
 -- 		},
